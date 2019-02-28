@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class DepartmentCertificationCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
         public int DepartmentId { get; set; }
@@ -13,8 +14,6 @@ namespace Sca.Domain.Models
         public DateTime? CertificationStart { get; set; }
 
         public DateTime? CertificationEnd { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

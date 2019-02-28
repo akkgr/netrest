@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class CardUpdateModel
+        : EntityUpdateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int CardTypeId { get; set; }
 
         public DateTime? DateIn { get; set; }
@@ -27,8 +26,6 @@ namespace Sca.Domain.Models
         public int RankId { get; set; }
 
         public Byte[] Photo { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

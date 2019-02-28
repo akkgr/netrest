@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class ItemReadModel
+        : EntityReadModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string Title { get; set; }
 
         public int PackagingId { get; set; }
@@ -29,8 +28,6 @@ namespace Sca.Domain.Models
         public string Company { get; set; }
 
         public string ActiveSubstance { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

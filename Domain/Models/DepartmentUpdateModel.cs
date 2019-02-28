@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class DepartmentUpdateModel
+        : EntityUpdateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string Title { get; set; }
 
         public DateTime OperationStart { get; set; }
@@ -25,8 +24,6 @@ namespace Sca.Domain.Models
         public string Procedures { get; set; }
 
         public DateTime? ChangeDate { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         public int? PreviousVersion { get; set; }
 

@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class ArchiveCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string Title { get; set; }
 
         public int? CategoryId { get; set; }
@@ -25,8 +24,6 @@ namespace Sca.Domain.Models
         public int? OrgTreeNodeId { get; set; }
 
         public int UserId { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

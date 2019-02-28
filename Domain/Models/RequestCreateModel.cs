@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class RequestCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int EmployeeId { get; set; }
 
         public int OrgTreeNodeId { get; set; }
@@ -45,8 +44,6 @@ namespace Sca.Domain.Models
         public DateTime? Deadline { get; set; }
 
         public int? AssignmentId { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

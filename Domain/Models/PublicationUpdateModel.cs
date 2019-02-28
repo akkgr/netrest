@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class PublicationUpdateModel
+        : EntityUpdateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int SerialNumber { get; set; }
 
         public DateTime RegisterDate { get; set; }
@@ -19,8 +18,6 @@ namespace Sca.Domain.Models
         public int RankId { get; set; }
 
         public bool IsActive { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

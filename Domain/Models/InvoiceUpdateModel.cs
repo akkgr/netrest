@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class InvoiceUpdateModel
+        : EntityUpdateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int OrgTreeNodeId { get; set; }
 
         public int CompanyNodeId { get; set; }
@@ -73,8 +72,6 @@ namespace Sca.Domain.Models
         public bool? Eep { get; set; }
 
         public int? InvoiceId { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

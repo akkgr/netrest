@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class UserConnectionReadModel
+        : EntityReadModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string UserName { get; set; }
 
         public string FullName { get; set; }

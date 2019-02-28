@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class DocUserReadModel
+        : EntityReadModel
     {
         #region Generated Properties
         public int DocId { get; set; }

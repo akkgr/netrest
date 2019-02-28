@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class TransactionTypeCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string Title { get; set; }
 
         public int Act { get; set; }

@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class CertificationProcedureUpdateModel
+        : EntityUpdateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int CertificationId { get; set; }
 
         public string Title { get; set; }
@@ -27,8 +26,6 @@ namespace Sca.Domain.Models
         public DateTime StartDate { get; set; }
 
         public DateTime? EndDate { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         public int? PreviousVersion { get; set; }
 

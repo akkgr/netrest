@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class ModeratorCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public bool IsEmployee { get; set; }
 
         public bool IsUser { get; set; }
@@ -21,8 +20,6 @@ namespace Sca.Domain.Models
         public int? UserId { get; set; }
 
         public string FullName { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

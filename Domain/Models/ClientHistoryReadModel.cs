@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class ClientHistoryReadModel
+        : EntityReadModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int Clientid { get; set; }
 
         public DateTime DateFrom { get; set; }
@@ -111,8 +110,6 @@ namespace Sca.Domain.Models
         public int? ChildrenAbove14 { get; set; }
 
         public string Mobile { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

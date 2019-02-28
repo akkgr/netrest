@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class DocDocGroupUpdateModel
+        : EntityUpdateModel
     {
         #region Generated Properties
         public int DocId { get; set; }

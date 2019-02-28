@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class BoardMemberCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string LastName { get; set; }
 
         public string FirstName { get; set; }
@@ -27,8 +26,6 @@ namespace Sca.Domain.Models
         public int OrgTreeNodeId { get; set; }
 
         public string Email { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

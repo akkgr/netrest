@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class AppointmentIntakeUpdateModel
+        : EntityUpdateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int AppointmentId { get; set; }
 
         public bool IsIntake { get; set; }
@@ -23,8 +22,6 @@ namespace Sca.Domain.Models
         public int? RankId { get; set; }
 
         public bool Billed { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

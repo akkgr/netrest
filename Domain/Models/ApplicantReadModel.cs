@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class ApplicantReadModel
+        : EntityReadModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string ApplicationNumber { get; set; }
 
         public string ApplicationCode { get; set; }
@@ -63,8 +62,6 @@ namespace Sca.Domain.Models
         public string Result { get; set; }
 
         public Byte[] Photo { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

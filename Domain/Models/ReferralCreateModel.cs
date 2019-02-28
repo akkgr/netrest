@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class ReferralCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int? ClientId { get; set; }
 
         public int? IntakeId { get; set; }
@@ -35,8 +34,6 @@ namespace Sca.Domain.Models
         public bool Cancelled { get; set; }
 
         public string CancelReason { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

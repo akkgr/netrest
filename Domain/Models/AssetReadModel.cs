@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class AssetReadModel
+        : EntityReadModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int? InvoiceTypeId { get; set; }
 
         public string InvoiceNo { get; set; }
@@ -51,8 +50,6 @@ namespace Sca.Domain.Models
         public int? AssetTypeId { get; set; }
 
         public bool? Disposed { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

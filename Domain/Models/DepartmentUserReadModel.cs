@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class DepartmentUserReadModel
+        : EntityReadModel
     {
         #region Generated Properties
         public int DepartmentId { get; set; }
@@ -15,8 +16,6 @@ namespace Sca.Domain.Models
         public DateTime? StartDate { get; set; }
 
         public DateTime? EndDate { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

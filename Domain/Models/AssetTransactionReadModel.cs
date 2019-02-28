@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class AssetTransactionReadModel
+        : EntityReadModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int AssetId { get; set; }
 
         public int? InvoiceTypeId { get; set; }
@@ -33,8 +32,6 @@ namespace Sca.Domain.Models
         public DateTime? ChargeDate { get; set; }
 
         public int UserId { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

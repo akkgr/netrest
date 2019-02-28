@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class InfoMessageCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string Caption { get; set; }
 
         public string Message { get; set; }
@@ -21,8 +20,6 @@ namespace Sca.Domain.Models
         public string LinkTable { get; set; }
 
         public int? LinkId { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class ClientHistoryServiceUpdateModel
+        : EntityUpdateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int ClientHistoryId { get; set; }
 
         public int OrgTreeNodeId { get; set; }
@@ -21,8 +20,6 @@ namespace Sca.Domain.Models
         public DateTime? EndDate { get; set; }
 
         public DateTime LastUpdated { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

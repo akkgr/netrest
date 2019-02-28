@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class TreatmentUpdateModel
+        : EntityUpdateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int Sn { get; set; }
 
         public int? IntakeId { get; set; }
@@ -35,8 +34,6 @@ namespace Sca.Domain.Models
         public int UserId { get; set; }
 
         public int OrgTreeNodeId { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

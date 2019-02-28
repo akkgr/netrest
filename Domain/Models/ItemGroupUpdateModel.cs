@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class ItemGroupUpdateModel
+        : EntityUpdateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int ItemId { get; set; }
 
         public decimal Quantity { get; set; }
@@ -17,8 +16,6 @@ namespace Sca.Domain.Models
         public string GroupId { get; set; }
 
         public string GroupName { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

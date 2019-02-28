@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class IntakeReadModel
+        : EntityReadModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public DateTime? DateIn { get; set; }
 
         public DateTime? Received { get; set; }
@@ -91,8 +90,6 @@ namespace Sca.Domain.Models
         public string OtherInfo { get; set; }
 
         public int? Sex { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

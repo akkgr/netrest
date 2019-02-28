@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class PhoneBookEntryReadModel
+        : EntityReadModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string LastName { get; set; }
 
         public string FirstName { get; set; }
@@ -35,8 +34,6 @@ namespace Sca.Domain.Models
         public int UserId { get; set; }
 
         public int OrgTreeNodeId { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

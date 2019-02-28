@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class VolunteerCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string Frequency { get; set; }
 
         public string FrequencyOther { get; set; }
@@ -35,8 +34,6 @@ namespace Sca.Domain.Models
         public string AreasOfInterestOther { get; set; }
 
         public string Health { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

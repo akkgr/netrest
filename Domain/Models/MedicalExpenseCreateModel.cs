@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class MedicalExpenseCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int InsurerId { get; set; }
 
         public int Year { get; set; }
@@ -39,8 +38,6 @@ namespace Sca.Domain.Models
         public DateTime? ReceiptDate { get; set; }
 
         public bool Collected { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

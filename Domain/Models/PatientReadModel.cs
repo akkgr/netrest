@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class PatientReadModel
+        : EntityReadModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public int? PopulationCategory { get; set; }
 
         public string PopulationCategoryNote { get; set; }
@@ -67,8 +66,6 @@ namespace Sca.Domain.Models
         public string SatisfactionDegree { get; set; }
 
         public string TerminationReason { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

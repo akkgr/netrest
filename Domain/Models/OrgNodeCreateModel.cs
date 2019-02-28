@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace Sca.Domain.Models
 {
     public partial class OrgNodeCreateModel
+        : EntityCreateModel
     {
         #region Generated Properties
-        public int Id { get; set; }
-
         public string Title { get; set; }
 
         public string Code { get; set; }
@@ -19,8 +18,6 @@ namespace Sca.Domain.Models
         public int? ViewOrder { get; set; }
 
         public string AppObject { get; set; }
-
-        public Byte[] RowVersion { get; set; }
 
         #endregion
 

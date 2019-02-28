@@ -27,15 +27,32 @@ model:
   shared:
     namespace: '{Project.Namespace}.Domain.Models'
     directory: '{Project.Directory}\Domain\Models'
+    exclude:
+      properties:
+        - '\.Id$'
+        - '\.Created$'
+        - '\.CreatedBy$'
+        - '\.Updated$'
+        - '\.UpdatedBy$'
+        - '\.RowVersion$'
   read:
     generate: true
     name: '{Entity.Name}ReadModel'
+    baseClass: EntityReadModel
+    namespace: '{Project.Namespace}.Domain.Models'
+    directory: '{Project.Directory}\Domain\Models'
   create:
     generate: true
     name: '{Entity.Name}CreateModel'
+    baseClass: EntityCreateModel
+    namespace: '{Project.Namespace}.Domain.Models'
+    directory: '{Project.Directory}\Domain\Models'
   update:
     generate: true
     name: '{Entity.Name}UpdateModel'
+    baseClass: EntityUpdateModel
+    namespace: '{Project.Namespace}.Domain.Models'
+    directory: '{Project.Directory}\Domain\Models'
   mapper:
     generate: true
     name: '{Entity.Name}Profile'
