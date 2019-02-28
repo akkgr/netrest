@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using Sca.Definitions;
 
 namespace Sca.Data.Entities
 {
-    public partial class Appointment
+    public partial class Appointment : IHaveIdentifier
     {
         public Appointment()
         {

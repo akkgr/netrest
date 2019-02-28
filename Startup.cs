@@ -14,6 +14,7 @@ using Microsoft.Extensions.Options;
 using Sca.Data;
 using AutoMapper;
 using FluentValidation;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace scatmp
 {
@@ -42,6 +43,11 @@ namespace scatmp
             );
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Tracker API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,10 +60,17 @@ namespace scatmp
             else
             {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                // app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Tracker API");
+            });
+
+            // app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

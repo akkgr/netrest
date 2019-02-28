@@ -13,7 +13,7 @@ using Sca.Data;
 using Sca.Definitions;
 using Sca.Domain.Models;
 
-namespace Tracker.Web.Controllers
+namespace Sca.Controllers
 {
     [ApiController]
     [Produces("application/json")]
