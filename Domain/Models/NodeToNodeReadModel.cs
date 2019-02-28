@@ -14,6 +14,8 @@ namespace Sca.Domain.Models
 
         public int UserId { get; set; }
 
+        public bool Invoice { get; set; }
+
         #endregion
 
     }

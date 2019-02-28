@@ -262,9 +262,9 @@ namespace Sca.Data
 
         public virtual DbSet<Sca.Data.Entities.Moderator> Moderators { get; set; }
 
-        public virtual DbSet<Sca.Data.Entities.NodeToNode> NodeToNodes { get; set; }
-
         public virtual DbSet<Sca.Data.Entities.OrgNodeType> OrgNodeTypes { get; set; }
+
+        public virtual DbSet<Sca.Data.Entities.NodeToNode> NodeToNodes { get; set; }
 
         public virtual DbSet<Sca.Data.Entities.BoardMinuteSignature> BoardMinuteSignatures { get; set; }
 
@@ -400,8 +400,8 @@ namespace Sca.Data
             modelBuilder.ApplyConfiguration(new Sca.Data.Mapping.MedicalExpenseMap());
             modelBuilder.ApplyConfiguration(new Sca.Data.Mapping.CertificationProcedurePublicationMap());
             modelBuilder.ApplyConfiguration(new Sca.Data.Mapping.ModeratorMap());
-            modelBuilder.ApplyConfiguration(new Sca.Data.Mapping.NodeToNodeMap());
             modelBuilder.ApplyConfiguration(new Sca.Data.Mapping.OrgNodeTypeMap());
+            modelBuilder.ApplyConfiguration(new Sca.Data.Mapping.NodeToNodeMap());
             modelBuilder.ApplyConfiguration(new Sca.Data.Mapping.BoardMinuteSignatureMap());
             modelBuilder.ApplyConfiguration(new Sca.Data.Mapping.BoardMinuteSubjectMap());
             #endregion

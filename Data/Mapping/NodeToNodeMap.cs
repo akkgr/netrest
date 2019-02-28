@@ -38,6 +38,11 @@ namespace Sca.Data.Mapping
                 .HasColumnName("UserId")
                 .HasColumnType("int");
 
+            builder.Property(t => t.Invoice)
+                .IsRequired()
+                .HasColumnName("Invoice")
+                .HasColumnType("bit");
+
             // relationships
             builder.HasOne(t => t.ParentNodeOrgTreeNode)
                 .WithMany(t => t.ParentNodeNodeToNodes)

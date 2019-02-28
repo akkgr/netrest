@@ -18,7 +18,7 @@ data:
     namespace: '{Project.Namespace}.Data.Mapping'
     directory: '{Project.Directory}\Data\Mapping'
   query:
-    generate: true
+    generate: false
     indexPrefix: By
     uniquePrefix: GetBy
     namespace: '{Project.Namespace}.Data.Queries'

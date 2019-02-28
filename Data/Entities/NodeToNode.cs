@@ -20,6 +20,8 @@ namespace Sca.Data.Entities
 
         public int UserId { get; set; }
 
+        public bool Invoice { get; set; }
+
         #endregion
 
         #region Generated Relationships
